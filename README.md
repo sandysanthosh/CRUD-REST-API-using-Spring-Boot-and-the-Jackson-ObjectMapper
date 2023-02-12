@@ -132,6 +132,18 @@ public class EmployeeController {
 
 ```
 
+
+```
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+}
+
+
+```
+
+
 In this example, the EmployeeController class uses the @RestController annotation to indicate that it is a RESTful web service.
 
 The @RequestMapping annotation maps the class to a URL, in this case /employees. 
